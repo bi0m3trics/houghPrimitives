@@ -1,2 +1,43 @@
-/doc/
-/Meta/
+# R files
+.Rhistory
+.RData
+.Rproj.user
+.Rproj.user/
+*.Rproj
+
+# Compiled files
+*.o
+*.so
+*.dll
+src/*.o
+src/*.so
+src/*.dll
+
+# RcppExports (auto-generated)
+src/RcppExports.cpp
+R/RcppExports.R
+
+# Package build files
+inst/doc
+doc/
+Meta/
+man/*.Rd
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Archive files
+*.zip
+
+# Other stuff
+misc/
