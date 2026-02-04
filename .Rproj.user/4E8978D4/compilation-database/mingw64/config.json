@@ -1,0 +1,25 @@
+{
+    "args": [
+        "-std=gnu++17",
+        "-IC:/Users/ajm69/AppData/Local/Programs/R/R-4.4.2/include",
+        "-DNDEBUG",
+        "-IC:/Users/ajm69/AppData/Local/Programs/R/R-4.4.2/library/Rcpp/include",
+        "-IC:/Users/ajm69/AppData/Local/Programs/R/R-4.4.2/library/RcppEigen/include",
+        "-DEIGEN_DONT_VECTORIZE",
+        "-nostdinc",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/include/c++",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/include/c++/x86_64-w64-mingw32.static.posix",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/include/c++/backward",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/include",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/../../../../include",
+        "-Ic:/rtools44/x86_64~1.pos/bin/../lib/gcc/x86_64-w64-mingw32.static.posix/13.3.0/include-fixed",
+        "-include",
+        "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/.Rproj.user/4E8978D4/compilation-database/mingw64/cpp-definitions.h"
+    ],
+    "pch": "RcppEigen",
+    "is_cpp": true,
+    "hash": "1770046155",
+    "compiler": "14560070257236426505",
+    "rversion": "4.4.2",
+    "dbversion": 4
+}

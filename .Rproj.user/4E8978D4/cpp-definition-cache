@@ -1,0 +1,99 @@
+[
+    {
+        "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+        "file_last_write": 1770043865.0,
+        "definitions": [
+            {
+                "usr": "c:@F@summarize_points#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "summarize_points(Rcpp::NumericMatrix)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 11,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_tree_boles#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#d#I#b#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_tree_boles(Rcpp::NumericMatrix, double, double, double, int, bool, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 52,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_spheres#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_spheres(Rcpp::NumericMatrix, double, double, int, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 298,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_planes#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#I#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_planes(Rcpp::NumericMatrix, double, int, int, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 578,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_lines#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#I#d#I#b#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_lines(Rcpp::NumericMatrix, double, int, double, int, bool, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 736,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_cylinders#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#d#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_cylinders(Rcpp::NumericMatrix, double, double, double, int, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 923,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_cubes#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_cubes(Rcpp::NumericMatrix, double, double, int, double, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 1170,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_cuboids#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#d#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_cuboids(Rcpp::NumericMatrix, double, double, double, double, int, double, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 1371,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@detect_cones#$@N@Rcpp@S@Matrix>#VI14#@N@Rcpp@ST>1#T@PreserveStorage#d#d#d#d#I#d#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "detect_cones(Rcpp::NumericMatrix, double, double, double, double, int, double, bool)",
+                "file": "C:/Users/ajm69/OneDrive - Northern Arizona University/GitHubRepos/houghPrimitives/src/simple_detection.cpp",
+                "line": 1574,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

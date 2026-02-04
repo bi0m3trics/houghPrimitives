@@ -1,0 +1,31 @@
+Package: houghPrimitives
+Type: Package
+Title: Comprehensive 3D Shape Detection for LiDAR Point Clouds
+Version: 0.1.0
+Date: 2026-02-01
+Authors@R: c(
+    person("Andrew", "Sánchez Meador", role = c("aut", "cre"),
+           email = "andrew.sanchezmeador@nau.edu")
+    )
+Description: Implements Iterative Hough Transform methods for detecting
+    geometric primitives in 3D point clouds. Supports detection of lines,
+    planes, spheres, cylinders (tree boles), and cuboids (buildings).
+    Fully compatible with lidR package for LiDAR data processing.
+    Designed for forestry and urban LiDAR applications.
+License: GPL-3
+Imports: Rcpp (>= 1.0.8.3)
+LinkingTo: Rcpp, RcppEigen
+Suggests: 
+    lidR,
+    sf,
+    rgl,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    pkgdown
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+Encoding: UTF-8
+URL: https://github.com/bi0m3trics/houghPrimitives
+BugReports: https://github.com/bi0m3trics/houghPrimitives/issues
+Config/testthat/edition: 3

@@ -1,0 +1,98 @@
+url: https://yourusername.github.io/houghPrimitives
+
+template:
+  bootstrap: 5
+  bootswatch: slate
+  bslib:
+    bg: "#1a1a1a"
+    fg: "#e0e0e0"
+    primary: "#2E86AB"
+    base_font:
+      google: "Roboto"
+    code_font:
+      google: "Fira Code"
+  
+navbar:
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
+    articles:
+      text: Articles
+      menu:
+      - text: Getting Started
+      - text: "Introduction to Shape Classification"
+        href: articles/shape-classification-intro.html
+      - text: -------
+      - text: Detection Methods
+      - text: "Sphere Detection"
+        href: articles/sphere-detection.html
+      - text: "Line Detection Strategies"
+        href: articles/line-detection.html
+      - text: "Multi-Shape Scene Classification"
+        href: articles/multi-shape-classification.html
+      - text: -------
+      - text: Advanced Topics
+      - text: "Parameter Tuning Guide"
+        href: articles/parameter-tuning.html
+
+reference:
+  - title: "Package Documentation"
+    desc: "Package overview and information"
+    contents:
+      - houghPrimitives-package
+  
+  - title: "Shape Detection Functions"
+    desc: "Core functions for detecting primitive shapes in point clouds"
+    contents:
+      - detect_spheres
+      - detect_cylinders
+      - detect_planes
+      - detect_lines
+      - detect_cubes
+      - detect_cuboids
+      - detect_cones
+      - detect_tree_boles
+  
+  - title: "Utility Functions"
+    desc: "Helper functions for point cloud analysis"
+    contents:
+      - summarize_points
+  
+  - title: "Visualization"
+    desc: "Color palette functions for visualization"
+    contents:
+      - hough_palette
+      - hough_palette_gradient
+      - hough_palette_pairs
+      - hough_palette_preview
+  
+  - title: "3D Visualization Utilities"
+    desc: "Functions for creating rgl figures in vignettes"
+    contents:
+      - setup_rgl_knitr
+      - save_rgl_snapshot
+      - create_rgl_widget
+      - create_rgl_figure
+
+articles:
+  - title: "Getting Started"
+    navbar: ~
+    contents:
+      - shape-classification-intro
+  
+  - title: "Detection Methods"
+    navbar: ~
+    contents:
+      - sphere-detection
+      - line-detection
+      - multi-shape-classification
+  
+  - title: "Advanced Topics"
+    navbar: ~
+    contents:
+      - parameter-tuning
+
+home:
+  title: "houghPrimitives • 3D Shape Detection for Point Clouds"
+  description: "Comprehensive 3D shape detection using Iterative Hough Transform methods for LiDAR and point cloud data"

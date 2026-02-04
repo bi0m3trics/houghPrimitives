@@ -1,0 +1,11 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^doc$
+^Meta$
+^docs$
+^_pkgdown\.yml$
+^pkgdown$
+^examples$
+^images$
+^img$
+^misc$
