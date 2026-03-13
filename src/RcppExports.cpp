@@ -154,6 +154,74 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// detect_circles_2d
+List detect_circles_2d(NumericMatrix xy, double min_radius, double max_radius, double distance_threshold, int min_votes, int max_iterations, bool label_points);
+RcppExport SEXP _houghPrimitives_detect_circles_2d(SEXP xySEXP, SEXP min_radiusSEXP, SEXP max_radiusSEXP, SEXP distance_thresholdSEXP, SEXP min_votesSEXP, SEXP max_iterationsSEXP, SEXP label_pointsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type xy(xySEXP);
+    Rcpp::traits::input_parameter< double >::type min_radius(min_radiusSEXP);
+    Rcpp::traits::input_parameter< double >::type max_radius(max_radiusSEXP);
+    Rcpp::traits::input_parameter< double >::type distance_threshold(distance_thresholdSEXP);
+    Rcpp::traits::input_parameter< int >::type min_votes(min_votesSEXP);
+    Rcpp::traits::input_parameter< int >::type max_iterations(max_iterationsSEXP);
+    Rcpp::traits::input_parameter< bool >::type label_points(label_pointsSEXP);
+    rcpp_result_gen = Rcpp::wrap(detect_circles_2d(xy, min_radius, max_radius, distance_threshold, min_votes, max_iterations, label_points));
+    return rcpp_result_gen;
+END_RCPP
+}
+// detect_ellipses_2d
+List detect_ellipses_2d(NumericMatrix xy, double min_radius, double max_radius, double distance_threshold, int min_votes, int max_iterations, bool label_points);
+RcppExport SEXP _houghPrimitives_detect_ellipses_2d(SEXP xySEXP, SEXP min_radiusSEXP, SEXP max_radiusSEXP, SEXP distance_thresholdSEXP, SEXP min_votesSEXP, SEXP max_iterationsSEXP, SEXP label_pointsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type xy(xySEXP);
+    Rcpp::traits::input_parameter< double >::type min_radius(min_radiusSEXP);
+    Rcpp::traits::input_parameter< double >::type max_radius(max_radiusSEXP);
+    Rcpp::traits::input_parameter< double >::type distance_threshold(distance_thresholdSEXP);
+    Rcpp::traits::input_parameter< int >::type min_votes(min_votesSEXP);
+    Rcpp::traits::input_parameter< int >::type max_iterations(max_iterationsSEXP);
+    Rcpp::traits::input_parameter< bool >::type label_points(label_pointsSEXP);
+    rcpp_result_gen = Rcpp::wrap(detect_ellipses_2d(xy, min_radius, max_radius, distance_threshold, min_votes, max_iterations, label_points));
+    return rcpp_result_gen;
+END_RCPP
+}
+// detect_rectangles_2d
+List detect_rectangles_2d(NumericMatrix xy, double min_width, double max_width, double distance_threshold, int min_votes, int max_iterations, bool label_points);
+RcppExport SEXP _houghPrimitives_detect_rectangles_2d(SEXP xySEXP, SEXP min_widthSEXP, SEXP max_widthSEXP, SEXP distance_thresholdSEXP, SEXP min_votesSEXP, SEXP max_iterationsSEXP, SEXP label_pointsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type xy(xySEXP);
+    Rcpp::traits::input_parameter< double >::type min_width(min_widthSEXP);
+    Rcpp::traits::input_parameter< double >::type max_width(max_widthSEXP);
+    Rcpp::traits::input_parameter< double >::type distance_threshold(distance_thresholdSEXP);
+    Rcpp::traits::input_parameter< int >::type min_votes(min_votesSEXP);
+    Rcpp::traits::input_parameter< int >::type max_iterations(max_iterationsSEXP);
+    Rcpp::traits::input_parameter< bool >::type label_points(label_pointsSEXP);
+    rcpp_result_gen = Rcpp::wrap(detect_rectangles_2d(xy, min_width, max_width, distance_threshold, min_votes, max_iterations, label_points));
+    return rcpp_result_gen;
+END_RCPP
+}
+// detect_squares_2d
+List detect_squares_2d(NumericMatrix xy, double min_size, double max_size, double distance_threshold, int min_votes, int max_iterations, bool label_points);
+RcppExport SEXP _houghPrimitives_detect_squares_2d(SEXP xySEXP, SEXP min_sizeSEXP, SEXP max_sizeSEXP, SEXP distance_thresholdSEXP, SEXP min_votesSEXP, SEXP max_iterationsSEXP, SEXP label_pointsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type xy(xySEXP);
+    Rcpp::traits::input_parameter< double >::type min_size(min_sizeSEXP);
+    Rcpp::traits::input_parameter< double >::type max_size(max_sizeSEXP);
+    Rcpp::traits::input_parameter< double >::type distance_threshold(distance_thresholdSEXP);
+    Rcpp::traits::input_parameter< int >::type min_votes(min_votesSEXP);
+    Rcpp::traits::input_parameter< int >::type max_iterations(max_iterationsSEXP);
+    Rcpp::traits::input_parameter< bool >::type label_points(label_pointsSEXP);
+    rcpp_result_gen = Rcpp::wrap(detect_squares_2d(xy, min_size, max_size, distance_threshold, min_votes, max_iterations, label_points));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_houghPrimitives_summarize_points", (DL_FUNC) &_houghPrimitives_summarize_points, 1},
@@ -165,6 +233,10 @@ static const R_CallMethodDef CallEntries[] = {
     {"_houghPrimitives_detect_cubes", (DL_FUNC) &_houghPrimitives_detect_cubes, 6},
     {"_houghPrimitives_detect_cuboids", (DL_FUNC) &_houghPrimitives_detect_cuboids, 8},
     {"_houghPrimitives_detect_cones", (DL_FUNC) &_houghPrimitives_detect_cones, 8},
+    {"_houghPrimitives_detect_circles_2d", (DL_FUNC) &_houghPrimitives_detect_circles_2d, 7},
+    {"_houghPrimitives_detect_ellipses_2d", (DL_FUNC) &_houghPrimitives_detect_ellipses_2d, 7},
+    {"_houghPrimitives_detect_rectangles_2d", (DL_FUNC) &_houghPrimitives_detect_rectangles_2d, 7},
+    {"_houghPrimitives_detect_squares_2d", (DL_FUNC) &_houghPrimitives_detect_squares_2d, 7},
     {NULL, NULL, 0}
 };
 

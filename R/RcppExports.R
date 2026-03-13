@@ -126,3 +126,81 @@ detect_cones <- function(xyz, min_radius = 0.1, max_radius = 2.0, min_height = 0
     .Call(`_houghPrimitives_detect_cones`, xyz, min_radius, max_radius, min_height, max_height, min_votes, angle_threshold, label_points)
 }
 
+#' Detect circles in 2D point data using RANSAC
+#'
+#' Uses a RANSAC approach with 3-point circumscribed circle fitting to detect
+#' circular patterns in 2D point sets. Iteratively detects circles, removing
+#' inlier points after each detection.
+#'
+#' @param xy A matrix with 2 columns (X, Y coordinates)
+#' @param min_radius Minimum circle radius
+#' @param max_radius Maximum circle radius
+#' @param distance_threshold Maximum distance from circle boundary for inliers
+#' @param min_votes Minimum number of points required to detect a circle
+#' @param max_iterations Maximum RANSAC iterations per detection
+#' @param label_points If TRUE, label all points with circle ID
+#' @return A list with detected circles and optionally labeled points
+#' @export
+detect_circles_2d <- function(xy, min_radius = 0.1, max_radius = 10.0, distance_threshold = 0.1, min_votes = 20L, max_iterations = 1000L, label_points = FALSE) {
+    .Call(`_houghPrimitives_detect_circles_2d`, xy, min_radius, max_radius, distance_threshold, min_votes, max_iterations, label_points)
+}
+
+#' Detect ellipses in 2D point data using RANSAC
+#'
+#' Uses RANSAC with 5-point algebraic conic fitting and Sampson distance
+#' for inlier evaluation. Iteratively detects ellipses, removing inlier
+#' points after each detection.
+#'
+#' @param xy A matrix with 2 columns (X, Y coordinates)
+#' @param min_radius Minimum semi-minor axis length
+#' @param max_radius Maximum semi-major axis length
+#' @param distance_threshold Maximum approximate distance from ellipse for inliers
+#' @param min_votes Minimum number of points required to detect an ellipse
+#' @param max_iterations Maximum RANSAC iterations per detection
+#' @param label_points If TRUE, label all points with ellipse ID
+#' @return A list with detected ellipses and optionally labeled points
+#' @export
+detect_ellipses_2d <- function(xy, min_radius = 0.1, max_radius = 10.0, distance_threshold = 0.1, min_votes = 30L, max_iterations = 2000L, label_points = FALSE) {
+    .Call(`_houghPrimitives_detect_ellipses_2d`, xy, min_radius, max_radius, distance_threshold, min_votes, max_iterations, label_points)
+}
+
+#' Detect rectangles in 2D point data using RANSAC
+#'
+#' Uses a RANSAC approach to detect rectangular patterns in 2D point sets.
+#' Samples 3 points to define edge direction and width, then validates by
+#' counting inliers along all 4 edges. Iteratively detects rectangles,
+#' removing inlier points after each detection.
+#'
+#' @param xy A matrix with 2 columns (X, Y coordinates)
+#' @param min_width Minimum rectangle dimension (applies to both width and height)
+#' @param max_width Maximum rectangle dimension (applies to both width and height)
+#' @param distance_threshold Maximum distance from rectangle edge for inliers
+#' @param min_votes Minimum number of points required to detect a rectangle
+#' @param max_iterations Maximum RANSAC iterations per detection
+#' @param label_points If TRUE, label all points with rectangle ID
+#' @return A list with detected rectangles and optionally labeled points
+#' @export
+detect_rectangles_2d <- function(xy, min_width = 0.5, max_width = 10.0, distance_threshold = 0.1, min_votes = 20L, max_iterations = 1000L, label_points = FALSE) {
+    .Call(`_houghPrimitives_detect_rectangles_2d`, xy, min_width, max_width, distance_threshold, min_votes, max_iterations, label_points)
+}
+
+#' Detect squares in 2D point data using RANSAC
+#'
+#' Uses the same approach as rectangle detection but with an additional
+#' constraint that width and height must be approximately equal (within
+#' 15\% tolerance). Iteratively detects squares, removing inlier points
+#' after each detection.
+#'
+#' @param xy A matrix with 2 columns (X, Y coordinates)
+#' @param min_size Minimum square side length
+#' @param max_size Maximum square side length
+#' @param distance_threshold Maximum distance from square edge for inliers
+#' @param min_votes Minimum number of points required to detect a square
+#' @param max_iterations Maximum RANSAC iterations per detection
+#' @param label_points If TRUE, label all points with square ID
+#' @return A list with detected squares and optionally labeled points
+#' @export
+detect_squares_2d <- function(xy, min_size = 0.5, max_size = 10.0, distance_threshold = 0.1, min_votes = 20L, max_iterations = 1000L, label_points = FALSE) {
+    .Call(`_houghPrimitives_detect_squares_2d`, xy, min_size, max_size, distance_threshold, min_votes, max_iterations, label_points)
+}
+

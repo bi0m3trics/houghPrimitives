@@ -1,6 +1,25 @@
 # News and Changes for houghPrimitives
 
-## Version 2.0.0 (2026-02-01)
+## Version 0.2.0 (2026-03-12)
+
+### New Features: 2D Shape Detection
+
+Added four new functions for detecting geometric primitives in 2D point data:
+
+- **`detect_circles_2d()`**: RANSAC-based circle detection using 3-point circumscribed circle fitting with iterative center refinement
+- **`detect_ellipses_2d()`**: RANSAC with 5-point algebraic conic fitting and Sampson distance for inlier evaluation; returns center, semi-major/minor axes, and rotation angle
+- **`detect_rectangles_2d()`**: RANSAC sampling 3 points to define edge direction and width, validates all 4 edges; returns center, width, height, and rotation angle
+- **`detect_squares_2d()`**: Same approach as rectangle detection with an additional constraint that width ≈ height (15% tolerance)
+
+All 2D functions follow the same API conventions as the existing 3D detectors:
+- Accept an Nx2 matrix of (X, Y) coordinates
+- Support `min_votes`, `max_iterations`, `distance_threshold`, and `label_points` parameters
+- Iteratively detect multiple shapes, removing inlier points after each detection
+- Return structured lists with shape data frames and optional point labels
+
+---
+
+## Version 0.1.1 (2026-02-01)
 
 ### Major Changes
 
@@ -86,7 +105,7 @@ Based on:
 
 ---
 
-## Version 1.0 (2022-07-10)
+## Version 0.1 (2022-07-10)
 
 - Initial release
 - Basic 3D line detection using Hough Transform
