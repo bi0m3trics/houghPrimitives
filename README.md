@@ -32,7 +32,7 @@ Comprehensive 3D Shape Detection for LiDAR Point Clouds using Iterative Hough Tr
 
 ``` r
 # Install from GitHub
-devtools::install_github("yourusername/houghPrimitives")
+devtools::install_github("bi0m3trics/houghPrimitives")
 
 # Or install from source
 install.packages("houghPrimitives", repos = NULL, type = "source")
